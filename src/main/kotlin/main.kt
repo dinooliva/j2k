@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
     runClassExample()
+    runConstructorExample()
     runNestedClassExample()
     runNestedStaticClassExample()
     runAnonymousClassExample()
@@ -10,10 +11,13 @@ fun main(args: Array<String>) {
 }
 
 fun runClassExample() {
-    val cJ = ClassExampleJa(5)
-    System.err.println("Class (J): " + cJ.getExampleI())
-    val cK = ClassExampleKt(5)
-    System.err.println("Class (K): " + cK.getExampleI())
+    System.err.println("Class (J): " + ClassExampleJa(5).getExampleI())
+    System.err.println("Class (K): " + ClassExampleKt(5).getExampleI())
+}
+
+fun runConstructorExample() {
+    System.err.println("Constructor (J): " + ConstructorExampleKt().x + " : " + ConstructorExampleKt(5).x)
+    System.err.println("Constructor (K): " + ConstructorExampleKt().x + " : " + ConstructorExampleKt(5).x)
 }
 
 fun runNestedClassExample() {

@@ -1,8 +1,8 @@
-class LocalClassExampleKt(var i: Int) {
-    var value = 0
+class LocalClassExampleKt {
+    var i: Int
 
-    fun LocalClassExampleJa(i: Int) {
-        value = i
+    constructor(i: Int) {
+        this.i = i
     }
 
     fun getB(): B {
