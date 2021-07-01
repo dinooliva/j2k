@@ -1,4 +1,4 @@
-enum EnumExampleJa {
+enum EnumJa {
     A(1) {
         @Override int getEnumValueX2() {
             return 2;
@@ -12,7 +12,7 @@ enum EnumExampleJa {
 
     final int value;
 
-    EnumExampleJa(int value) {
+    EnumJa(int value) {
         this.value = value;
     }
 

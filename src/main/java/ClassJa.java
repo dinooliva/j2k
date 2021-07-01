@@ -1,7 +1,7 @@
-class ClassExampleJa {
+class ClassJa {
     final int i;
 
-    ClassExampleJa(int i) {
+    ClassJa(int i) {
         this.i = i;
     }
 

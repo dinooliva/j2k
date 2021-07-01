@@ -1,4 +1,4 @@
-abstract class AbstractClassExampleKt {
+abstract class AbstractClassKt {
     val value: Int
 
     constructor(value: Int) {
@@ -11,7 +11,7 @@ abstract class AbstractClassExampleKt {
 
     abstract fun getAbstractClassValueX2(): Int
 
-    class A : AbstractClassExampleKt {
+    class A : AbstractClassKt {
         constructor() : super(24)
 
         override public fun getAbstractClassValueX2(): Int {

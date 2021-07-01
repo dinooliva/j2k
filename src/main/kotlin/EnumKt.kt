@@ -1,4 +1,4 @@
-enum class EnumExampleKt {
+enum class EnumKt {
     A(1) {
         override fun getEnumValueX2(): Int {
             return 2

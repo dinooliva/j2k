@@ -1,4 +1,4 @@
-class StaticExampleJa {
+class StaticJa {
     static final int i;
 
     static {

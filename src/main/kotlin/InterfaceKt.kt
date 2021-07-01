@@ -1,7 +1,7 @@
-interface InterfaceExampleKt {
+interface InterfaceKt {
     fun f(): Int
 
-    class OneF : InterfaceExampleKt {
+    class OneF : InterfaceKt {
         override fun f(): Int {
             return 1
         }

@@ -1,4 +1,4 @@
-class ConstructorExampleKt {
+class ConstructorKt {
     val x: Int
 
     constructor(x: Int) {

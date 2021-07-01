@@ -1,7 +1,7 @@
-public class AnonymousClassExampleJa {
+public class AnonymousClassJa {
     final int i;
 
-    AnonymousClassExampleJa(int i) {
+    AnonymousClassJa(int i) {
         this.i = i;
     }
 

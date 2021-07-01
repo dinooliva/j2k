@@ -1,7 +1,7 @@
-abstract class AbstractClassExampleJa {
+abstract class AbstractClassJa {
     final int value;
 
-    AbstractClassExampleJa(int value) {
+    AbstractClassJa(int value) {
         this.value = value;
     }
 
@@ -11,7 +11,7 @@ abstract class AbstractClassExampleJa {
 
     abstract int getAbstractClassValueX2();
 
-    static class A extends AbstractClassExampleJa {
+    static class A extends AbstractClassJa {
        A() {
             super(24);
         }

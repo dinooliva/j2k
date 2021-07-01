@@ -1,4 +1,4 @@
-class NestedStaticClassExampleJa {
+class NestedStaticClassJa {
     static int i;
 
     static class Nested {

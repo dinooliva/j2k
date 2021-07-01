@@ -1,4 +1,4 @@
-class NestedStaticClassExampleKt {
+class NestedStaticClassKt {
     companion object { var i = 0 }
 
     class Nested {

@@ -1,4 +1,4 @@
-class NestedClassExampleKt {
+class NestedClassKt {
     var i: Int
 
     constructor(i: Int) {

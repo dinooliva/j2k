@@ -1,16 +1,17 @@
-class AnonymousClassExampleKt {
+class LocalClassKt {
     val i: Int
 
     constructor(i: Int) {
         this.i = i
     }
 
-    fun getB(): B? {
-        return object : B {
-            override public fun getValue(): Int {
+    fun getB(): B {
+        class C : B {
+            override fun getValue(): Int {
                 return i
             }
         }
+        return C()
     }
 
     interface B {

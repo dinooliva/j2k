@@ -1,7 +1,7 @@
-class LocalClassExampleJa {
+class LocalClassJa {
     final int i;
 
-    LocalClassExampleJa(int i) {
+    LocalClassJa(int i) {
         this.i = i;
     }
 

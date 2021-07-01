@@ -1,4 +1,4 @@
-internal class ClassExampleKt {
+internal class ClassKt {
     val i: Int
 
     constructor(i: Int) {

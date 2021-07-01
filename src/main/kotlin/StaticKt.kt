@@ -1,4 +1,4 @@
-class StaticExampleKt {
+class StaticKt {
     companion object {
         val i: Int
 

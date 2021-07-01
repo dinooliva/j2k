@@ -1,7 +1,7 @@
-class NestedClassExampleJa {
+class NestedClassJa {
     final int i;
 
-    NestedClassExampleJa(int i) {
+    NestedClassJa(int i) {
         this.i = i;
     }
 
