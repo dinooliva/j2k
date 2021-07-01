@@ -1,4 +1,4 @@
-enum class EnumExampleKt(val value: Int) {
+enum class EnumExampleKt {
     A(1) {
         override fun getEnumValueX2(): Int {
             return 2
@@ -10,7 +10,15 @@ enum class EnumExampleKt(val value: Int) {
         }
     };
 
-    abstract fun getEnumValueX2(): Int
+    val value: Int
 
-    fun getEnumValue() : Int { return value }
+    constructor(value: Int) {
+        this.value = value
+    }
+
+    fun getEnumValue(): Int {
+        return value
+    }
+
+    abstract fun getEnumValueX2(): Int
 }

@@ -2,10 +2,8 @@ class ConstructorExampleKt {
     val x: Int
 
     constructor(x: Int) {
-      this.x = x
+        this.x = x
     }
 
-    constructor() {
-        x = 42
-    }
+    constructor() : this(42)
 }

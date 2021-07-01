@@ -1,10 +1,9 @@
 abstract class AbstractClassExampleJa {
+    final int value;
 
     AbstractClassExampleJa(int value) {
         this.value = value;
     }
-
-    private final int value;
 
     int getAbstractClassValue() {
         return value;
@@ -13,11 +12,11 @@ abstract class AbstractClassExampleJa {
     abstract int getAbstractClassValueX2();
 
     static class A extends AbstractClassExampleJa {
-        A() {
+       A() {
             super(24);
         }
 
-       int getAbstractClassValueX2() {
+       @Override int getAbstractClassValueX2() {
             return 48;
         }
     }

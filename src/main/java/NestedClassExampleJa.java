@@ -1,5 +1,5 @@
 class NestedClassExampleJa {
-    int i;
+    final int i;
 
     NestedClassExampleJa(int i) {
         this.i = i;

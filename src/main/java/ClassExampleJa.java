@@ -1,5 +1,5 @@
 class ClassExampleJa {
-    int i;
+    final int i;
 
     ClassExampleJa(int i) {
         this.i = i;

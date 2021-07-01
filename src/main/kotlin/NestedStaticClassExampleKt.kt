@@ -1,10 +1,8 @@
 class NestedStaticClassExampleKt {
-    companion object {
-        var i = 0
-    }
+    companion object { var i = 0 }
 
-    class Nested(j: Int) {
-        init {
+    class Nested {
+        constructor(j: Int) {
             i = j
         }
 

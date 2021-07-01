@@ -1,12 +1,12 @@
 class LocalClassExampleKt {
-    var i: Int
+    val i: Int
 
     constructor(i: Int) {
         this.i = i
     }
 
     fun getB(): B {
-        class C : B() {
+        class C : B {
             override fun getValue(): Int {
                 return i
             }
@@ -14,7 +14,7 @@ class LocalClassExampleKt {
         return C()
     }
 
-    abstract class B {
-        abstract fun getValue(): Int
+    interface B {
+        fun getValue(): Int
     }
 }

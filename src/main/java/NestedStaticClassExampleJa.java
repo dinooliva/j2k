@@ -1,4 +1,4 @@
-public class NestedStaticClassExampleJa {
+class NestedStaticClassExampleJa {
     static int i;
 
     static class Nested {

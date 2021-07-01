@@ -5,7 +5,5 @@ public class ConstructorExampleJa {
         this.x = x;
     }
 
-    ConstructorExampleJa() {
-        this.x = 42;
-    }
+    ConstructorExampleJa() { this(42); }
 }

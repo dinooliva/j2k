@@ -1,5 +1,5 @@
 class StaticExampleJa {
-    static int i;
+    static final int i;
 
     static {
         i = 42;

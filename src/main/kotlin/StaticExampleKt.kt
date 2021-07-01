@@ -1,6 +1,6 @@
 class StaticExampleKt {
     companion object {
-        var i = 0
+        val i: Int
 
         init {
             i = 42

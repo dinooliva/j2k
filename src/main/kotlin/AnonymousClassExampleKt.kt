@@ -1,14 +1,19 @@
-class AnonymousClassExampleKt (var i: Int){
+class AnonymousClassExampleKt {
+    val i: Int
+
+    constructor(i: Int) {
+        this.i = i
+    }
 
     fun getB(): B? {
-        return object : B() {
-            override fun getValue(): Int {
+        return object : B {
+            override public fun getValue(): Int {
                 return i
             }
         }
     }
 
-    abstract class B {
-        abstract fun getValue(): Int
+    interface B {
+        fun getValue(): Int
     }
 }

@@ -51,10 +51,12 @@ fun runLocalClassExample() {
 fun runAbstractClassExample() {
     val acJ = AbstractClassExampleJa.A()
     System.err.println(
-        "Abstract Class (J): " + " : " + acJ.getAbstractClassValue() + " : " + acJ.getAbstractClassValueX2())
+        "Abstract Class (J): " + " : " + acJ.getAbstractClassValue() + " : " + acJ.getAbstractClassValueX2()
+    )
     val acK = AbstractClassExampleKt.A()
     System.err.println(
-        "Abstract Class (K): " + " : " + acK.getAbstractClassValue() + " : " + acK.getAbstractClassValueX2())
+        "Abstract Class (K): " + " : " + acK.getAbstractClassValue() + " : " + acK.getAbstractClassValueX2()
+    )
 }
 
 fun runInterfaceExample() {

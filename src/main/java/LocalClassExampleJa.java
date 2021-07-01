@@ -1,4 +1,4 @@
-public class LocalClassExampleJa {
+class LocalClassExampleJa {
     final int i;
 
     LocalClassExampleJa(int i) {
@@ -6,15 +6,15 @@ public class LocalClassExampleJa {
     }
 
     B getB() {
-        class C extends B {
-            int getValue() {
+        class C implements B {
+            @Override public int getValue() {
                 return i;
             }
         }
         return new C();
     }
 
-    abstract class B {
-        abstract int getValue();
+    interface B {
+        int getValue();
     }
 }

@@ -7,13 +7,13 @@ public class AnonymousClassExampleJa {
 
     B getB() {
         return new B() {
-            int getValue() {
+            @Override public int getValue() {
                 return i;
             }
         };
     }
 
-    abstract class B {
-        abstract int getValue();
+    interface B {
+        int getValue();
     }
 }
