@@ -1,4 +1,4 @@
-class IfStatementJa {
+class IfJa {
     int fromBoolIf(boolean b) {
         if (b) {
             return 1;

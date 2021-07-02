@@ -1,4 +1,4 @@
-public class ForStatementJa {
+public class ForJa {
     int loop(int n) {
         int i = 0;
         for (int j = 0; j < n; j++) {

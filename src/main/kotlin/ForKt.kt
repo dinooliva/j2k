@@ -1,4 +1,4 @@
-class ForStatementKt {
+class ForKt {
     fun loop(n: Int): Int {
         var i = 0
         var j = 0

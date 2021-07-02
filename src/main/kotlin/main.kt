@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
-    runIfStatement()
-    runForStatement()
+    runIf()
+    runFor()
     runClass()
     runConstructor()
     runNestedClass()
@@ -14,16 +14,16 @@ fun main(args: Array<String>) {
 
 val sep = " : "
 
-fun runIfStatement() {
-    val ifJa = IfStatementJa()
-    val ifKt = IfStatementKt()
+fun runIf() {
+    val ifJa = IfJa()
+    val ifKt = IfKt()
     System.err.println("If (J): " + ifJa.fromBoolIf(false) + sep + ifJa.fromBoolIfElse(true))
     System.err.println("If (K): " + ifKt.fromBoolIf(false) + sep + ifKt.fromBoolIfElse(true))
 }
 
-fun runForStatement() {
-    val forJa = ForStatementJa()
-    val forKt = ForStatementKt()
+fun runFor() {
+    val forJa = ForJa()
+    val forKt = ForKt()
     System.err.println(
         "For (J): " + forJa.loop(4) + sep + forJa.loopWithBreak(10) + sep + forJa.loopWithContinue(12))
     System.err.println(

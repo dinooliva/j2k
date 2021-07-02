@@ -1,4 +1,4 @@
-class IfStatementKt {
+class IfKt {
     fun fromBoolIf(b: Boolean): Int {
         if (b) {
             return 1
