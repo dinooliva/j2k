@@ -1,4 +1,6 @@
 fun main(args: Array<String>) {
+    runIfStatement()
+    runForStatement()
     runClass()
     runConstructor()
     runNestedClass()
@@ -10,14 +12,36 @@ fun main(args: Array<String>) {
     runEnum()
 }
 
+val sep = " : "
+
+fun runIfStatement() {
+    val ifJa = IfStatementJa()
+    val ifKt = IfStatementKt()
+    System.err.println("If (J): " + ifJa.fromBoolIf(false) + sep + ifJa.fromBoolIfElse(true))
+    System.err.println("If (K): " + ifKt.fromBoolIf(false) + sep + ifKt.fromBoolIfElse(true))
+}
+
+fun runForStatement() {
+    val forJa = ForStatementJa()
+    val forKt = ForStatementKt()
+    System.err.println(
+        "For (J): " + forJa.loop(4) + sep + forJa.loopWithBreak(10) + sep + forJa.loopWithContinue(12))
+    System.err.println(
+        "For (k): " + forKt.loop(4) + sep + forKt.loopWithBreak(10) + sep + forKt.loopWithContinue(12))
+}
+
 fun runClass() {
-    System.err.println("Class (J): " + ClassJa(5).getExampleI())
-    System.err.println("Class (K): " + ClassKt(5).getExampleI())
+    val cJa = ClassJa(5)
+    val cKt = ClassKt(5)
+    System.err.println(
+        "Class (J): " + cJa.getClassI() + sep + cJa.toString() + sep + cJa.hashCode() + sep + cJa.equals(cJa))
+    System.err.println(
+        "Class (K): " + cKt.getClassI() + sep + cKt.toString() + sep + cKt.hashCode() + sep + cKt.equals(cKt))
 }
 
 fun runConstructor() {
-    System.err.println("Constructor (J): " + ConstructorKt().x + " : " + ConstructorKt(5).x)
-    System.err.println("Constructor (K): " + ConstructorKt().x + " : " + ConstructorKt(5).x)
+    System.err.println("Constructor (J): " + ConstructorKt().x + sep + ConstructorKt(5).x)
+    System.err.println("Constructor (K): " + ConstructorKt().x + sep + ConstructorKt(5).x)
 }
 
 fun runNestedClass() {
@@ -51,11 +75,11 @@ fun runLocalClass() {
 fun runAbstractClass() {
     val acJ = AbstractClassJa.A()
     System.err.println(
-        "Abstract Class (J): " + " : " + acJ.getAbstractClassValue() + " : " + acJ.getAbstractClassValueX2()
+        "Abstract Class (J): " + sep + acJ.getAbstractClassValue() + sep + acJ.getAbstractClassValueX2()
     )
     val acK = AbstractClassKt.A()
     System.err.println(
-        "Abstract Class (K): " + " : " + acK.getAbstractClassValue() + " : " + acK.getAbstractClassValueX2()
+        "Abstract Class (K): " + sep + acK.getAbstractClassValue() + sep + acK.getAbstractClassValueX2()
     )
 }
 
@@ -68,9 +92,9 @@ fun runInterface() {
 
 fun runEnum() {
     for (eJ in EnumJa.values()) {
-        System.err.println("Enum (J): " + eJ.ordinal + " : " + eJ.getEnumValue() + " : " + eJ.getEnumValueX2())
+        System.err.println("Enum (J): " + eJ.ordinal + sep + eJ.getEnumValue() + sep + eJ.getEnumValueX2())
     }
     for (eK in EnumKt.values()) {
-        System.err.println("Enum (K:) " + eK.ordinal + " : " + eK.getEnumValue() + " : " + eK.getEnumValueX2())
+        System.err.println("Enum (K:) " + eK.ordinal + sep + eK.getEnumValue() + sep + eK.getEnumValueX2())
     }
 }
