@@ -1,13 +1,11 @@
 fun main(args: Array<String>) {
     runIf()
     runFor()
-    runClass()
     runConstructor()
     runNestedClass()
     runNestedStaticClass()
     runAnonymousClass()
     runLocalClass()
-    runAbstractClass()
     runInterface()
     runEnum()
 }
@@ -28,15 +26,6 @@ fun runFor() {
         "For (J): " + forJa.loop(4) + sep + forJa.loopWithBreak(10) + sep + forJa.loopWithContinue(12))
     System.err.println(
         "For (k): " + forKt.loop(4) + sep + forKt.loopWithBreak(10) + sep + forKt.loopWithContinue(12))
-}
-
-fun runClass() {
-    val cJa = ClassJa(5)
-    val cKt = ClassKt(5)
-    System.err.println(
-        "Class (J): " + cJa.getClassI() + sep + cJa.toString() + sep + cJa.hashCode() + sep + cJa.equals(cJa))
-    System.err.println(
-        "Class (K): " + cKt.getClassI() + sep + cKt.toString() + sep + cKt.hashCode() + sep + cKt.equals(cKt))
 }
 
 fun runConstructor() {
@@ -73,14 +62,7 @@ fun runLocalClass() {
 }
 
 fun runAbstractClass() {
-    val acJ = AbstractClassJa.A()
-    System.err.println(
-        "Abstract Class (J): " + sep + acJ.getAbstractClassValue() + sep + acJ.getAbstractClassValueX2()
-    )
-    val acK = AbstractClassKt.A()
-    System.err.println(
-        "Abstract Class (K): " + sep + acK.getAbstractClassValue() + sep + acK.getAbstractClassValueX2()
-    )
+
 }
 
 fun runInterface() {
