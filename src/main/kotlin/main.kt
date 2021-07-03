@@ -1,6 +1,5 @@
 fun main(args: Array<String>) {
     runFor()
-    runConstructor()
     runNestedClass()
     runNestedStaticClass()
     runInterface()
@@ -16,11 +15,6 @@ fun runFor() {
         "For (J): " + forJa.loop(4) + sep + forJa.loopWithBreak(10) + sep + forJa.loopWithContinue(12))
     System.err.println(
         "For (k): " + forKt.loop(4) + sep + forKt.loopWithBreak(10) + sep + forKt.loopWithContinue(12))
-}
-
-fun runConstructor() {
-    System.err.println("Constructor (J): " + ConstructorKt().x + sep + ConstructorKt(5).x)
-    System.err.println("Constructor (K): " + ConstructorKt().x + sep + ConstructorKt(5).x)
 }
 
 fun runNestedClass() {
