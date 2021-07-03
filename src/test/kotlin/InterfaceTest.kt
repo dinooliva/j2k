@@ -4,10 +4,7 @@ import kotlin.test.assertEquals
 class InterfaceTest {
     @Test
     fun testInterface() {
-        val ja = InterfaceJa.OneF()
-        val kt = InterfaceJa.OneF()
-
-        assertEquals(1, ja.f())
-        assertEquals(1, kt.f())
+        assertEquals(1, InterfaceJa.OneF().f())
+        assertEquals(1, InterfaceKt.OneF().f())
     }
 }
