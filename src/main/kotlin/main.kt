@@ -61,10 +61,6 @@ fun runLocalClass() {
     System.err.println("Local Class (K): " + acK.getValue())
 }
 
-fun runAbstractClass() {
-
-}
-
 fun runInterface() {
     val iJ = InterfaceJa.OneF()
     System.err.println("Interface (J): " + iJ.f())
