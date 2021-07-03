@@ -4,7 +4,7 @@ import kotlin.test.assertFalse
 
 class ClassKtTest {
     @Test
-    fun classTest() {
+    fun testClass() {
         val cJa = ClassJa(5)
         val cKt = ClassKt(5)
 

@@ -1,22 +1,13 @@
 fun main(args: Array<String>) {
-    runIf()
     runFor()
     runConstructor()
     runNestedClass()
     runNestedStaticClass()
-    runAnonymousClass()
     runInterface()
     runEnum()
 }
 
 val sep = " : "
-
-fun runIf() {
-    val ifJa = IfJa()
-    val ifKt = IfKt()
-    System.err.println("If (J): " + ifJa.fromIf(false) + sep + ifJa.fromIfElse(true))
-    System.err.println("If (K): " + ifKt.fromIf(false) + sep + ifKt.fromIfElse(true))
-}
 
 fun runFor() {
     val forJa = ForJa()
@@ -44,13 +35,6 @@ fun runNestedStaticClass() {
     System.err.println("Static Nested Class (J): " + sncJ.getExampleI())
     val sncK = NestedStaticClassKt.Nested(7)
     System.err.println("Static Nested Class (K): " + sncK.getExampleI())
-}
-
-fun runAnonymousClass() {
-    val acJ = AnonymousClassJa(8).getB()
-    System.err.println("Anonymous Class (J): " + acJ.getValue())
-    val acK = AnonymousClassJa(8).getB()
-    System.err.println("Anonymous Class (K): " + acK.getValue())
 }
 
 fun runInterface() {

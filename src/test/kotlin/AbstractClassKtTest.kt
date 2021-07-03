@@ -3,7 +3,7 @@ import kotlin.test.assertEquals
 
 class AbstractClassKtTest {
     @Test
-    fun abstractClassTest() {
+    fun testAbstractClass() {
         val acJ = AbstractClassJa.A()
         val acK = AbstractClassKt.A()
 
