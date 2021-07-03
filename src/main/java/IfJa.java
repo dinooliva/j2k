@@ -1,12 +1,12 @@
 class IfJa {
-    int fromBoolIf(boolean b) {
+    int fromIf(boolean b) {
         if (b) {
             return 1;
         }
         return 0;
     }
 
-    int fromBoolIfElse(boolean b) {
+    int fromIfElse(boolean b) {
         if (b) {
             return 1;
         } else {

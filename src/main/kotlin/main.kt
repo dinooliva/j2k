@@ -5,7 +5,6 @@ fun main(args: Array<String>) {
     runNestedClass()
     runNestedStaticClass()
     runAnonymousClass()
-    runLocalClass()
     runInterface()
     runEnum()
 }
@@ -15,8 +14,8 @@ val sep = " : "
 fun runIf() {
     val ifJa = IfJa()
     val ifKt = IfKt()
-    System.err.println("If (J): " + ifJa.fromBoolIf(false) + sep + ifJa.fromBoolIfElse(true))
-    System.err.println("If (K): " + ifKt.fromBoolIf(false) + sep + ifKt.fromBoolIfElse(true))
+    System.err.println("If (J): " + ifJa.fromIf(false) + sep + ifJa.fromIfElse(true))
+    System.err.println("If (K): " + ifKt.fromIf(false) + sep + ifKt.fromIfElse(true))
 }
 
 fun runFor() {
@@ -52,13 +51,6 @@ fun runAnonymousClass() {
     System.err.println("Anonymous Class (J): " + acJ.getValue())
     val acK = AnonymousClassJa(8).getB()
     System.err.println("Anonymous Class (K): " + acK.getValue())
-}
-
-fun runLocalClass() {
-    val acJ = LocalClassJa(9).getB()
-    System.err.println("Local Class (J): " + acJ.getValue())
-    val acK = LocalClassKt(9).getB()
-    System.err.println("Local Class (K): " + acK.getValue())
 }
 
 fun runInterface() {

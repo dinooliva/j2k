@@ -1,12 +1,12 @@
 class IfKt {
-    fun fromBoolIf(b: Boolean): Int {
+    fun fromIf(b: Boolean): Int {
         if (b) {
             return 1
         }
         return 0
     }
 
-    fun fromBoolIfElse(b: Boolean): Int {
+    fun fromIfElse(b: Boolean): Int {
         if (b) {
             return 1
         } else {
