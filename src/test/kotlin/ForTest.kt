@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class ForKtTest{
+class ForTest{
     @Test
     fun testFor() {
         val ja = ForJa()

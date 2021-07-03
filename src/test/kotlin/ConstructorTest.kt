@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class ConstructorKtTest {
+class ConstructorTest {
     @Test
     fun testConstructor() {
         assertEquals(42, ConstructorJa().x)

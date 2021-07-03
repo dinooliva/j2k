@@ -2,7 +2,7 @@ import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 
-class ClassKtTest {
+class ClassTest {
     @Test
     fun testClass() {
         val ja = ClassJa(5)

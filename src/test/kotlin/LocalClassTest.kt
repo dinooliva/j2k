@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class LocalClassKtTest {
+class LocalClassTest {
     @Test
     fun testLocalClass() {
         assertEquals(9, LocalClassJa(9).getB().getValue())

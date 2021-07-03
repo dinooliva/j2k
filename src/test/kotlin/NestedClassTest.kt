@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class NestedClassKtTest {
+class NestedClassTest {
     @Test
     fun testNestedClass() {
         assertEquals(6, NestedClassJa(6).Nested().getExampleI())

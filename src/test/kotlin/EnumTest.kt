@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class EnumKtTest {
+class EnumTest {
     @Test
     fun testEnum() {
         assertEquals(0, EnumJa.A.ordinal)

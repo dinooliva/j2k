@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class IfKtTest {
+class IfTest {
     @Test
     fun testIf() {
         val ja = IfJa()

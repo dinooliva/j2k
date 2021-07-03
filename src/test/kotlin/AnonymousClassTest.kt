@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class AnonymousClassKtTest {
+class AnonymousClassTest {
     @Test
     fun testAnonymousClass() {
         assertEquals(8, AnonymousClassJa(8).getB().getValue())

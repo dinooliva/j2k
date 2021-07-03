@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class InterfaceKtTest {
+class InterfaceTest {
     @Test
     fun testInterface() {
         val ja = InterfaceJa.OneF()

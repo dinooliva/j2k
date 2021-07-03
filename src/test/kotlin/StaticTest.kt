@@ -1,7 +1,7 @@
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class StaticKtTest {
+class StaticTest {
     @Test
     fun testStaticTest() {
         assertEquals(42, StaticJa.getStaticI())
