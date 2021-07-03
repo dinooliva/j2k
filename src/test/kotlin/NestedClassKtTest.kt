@@ -4,10 +4,7 @@ import kotlin.test.assertEquals
 class NestedClassKtTest {
     @Test
     fun testNestedClass() {
-        val ja = NestedClassJa(6).Nested()
-        val kt = NestedClassKt(6).Nested()
-
-        assertEquals(6, ja.getExampleI())
-        assertEquals(6, kt.getExampleI())
+        assertEquals(6, NestedClassJa(6).Nested().getExampleI())
+        assertEquals(6, NestedClassKt(6).Nested().getExampleI())
     }
 }

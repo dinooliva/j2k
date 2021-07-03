@@ -5,19 +5,19 @@ import kotlin.test.assertFalse
 class ClassKtTest {
     @Test
     fun testClass() {
-        val cJa = ClassJa(5)
-        val cKt = ClassKt(5)
+        val ja = ClassJa(5)
+        val kt = ClassKt(5)
 
-        assertEquals(5, cJa.getClassI())
-        assertEquals(5, cKt.getClassI())
+        assertEquals(5, ja.getClassI())
+        assertEquals(5, kt.getClassI())
 
-        assertEquals("toString()", cJa.toString())
-        assertEquals("toString()", cKt.toString())
+        assertEquals("toString()", ja.toString())
+        assertEquals("toString()", kt.toString())
 
-        assertEquals(-1, cJa.hashCode())
-        assertEquals(-1, cKt.hashCode())
+        assertEquals(-1, ja.hashCode())
+        assertEquals(-1, kt.hashCode())
 
-        assertFalse(cJa.equals(cJa))
-        assertFalse(cKt.equals(cKt))
+        assertFalse(ja.equals(ja))
+        assertFalse(kt.equals(kt))
     }
 }

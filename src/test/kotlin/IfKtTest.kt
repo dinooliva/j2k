@@ -4,13 +4,13 @@ import kotlin.test.assertEquals
 class IfKtTest {
     @Test
     fun testIf() {
-        val ifJa = IfJa()
-        val ifKt = IfKt()
+        val ja = IfJa()
+        val kt = IfKt()
 
-        assertEquals(0, ifJa.fromIf(false))
-        assertEquals(0, ifKt.fromIf(false))
+        assertEquals(0, ja.fromIf(false))
+        assertEquals(0, kt.fromIf(false))
 
-        assertEquals(1, ifJa.fromIfElse(true))
-        assertEquals(1, ifKt.fromIfElse(true))
+        assertEquals(1, ja.fromIfElse(true))
+        assertEquals(1, kt.fromIfElse(true))
     }
 }
