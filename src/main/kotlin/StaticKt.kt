@@ -1,12 +1,12 @@
 class StaticKt {
     companion object {
-        val i: Int
+       @JvmField val i: Int
 
         init {
             i = 42
         }
 
-        fun getStaticI(): Int {
+        @JvmStatic fun getStaticI(): Int {
             return i
         }
     }
