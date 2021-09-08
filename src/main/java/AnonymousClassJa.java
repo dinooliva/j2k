@@ -1,4 +1,4 @@
-public class AnonymousClassJa {
+class AnonymousClassJa {
     final int i;
 
     AnonymousClassJa(int i) {

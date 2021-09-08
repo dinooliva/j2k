@@ -1,4 +1,4 @@
-public class JumpJa {
+class JumpJa {
     int jumpWithIf(int x) {
         int i = 0;
         int j = 0;

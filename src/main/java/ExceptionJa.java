@@ -1,4 +1,4 @@
-public class ExceptionJa {
+class ExceptionJa {
     int checkedException(int x) throws Exception {
         if (x == 1) {
             throw new Exception("checked");
