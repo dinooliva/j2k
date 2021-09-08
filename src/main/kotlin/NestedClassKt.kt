@@ -1,12 +1,12 @@
 class NestedClassKt {
-    var i: Int
+    val i: Int
 
     constructor(i: Int) {
         this.i = i
     }
 
     inner class Nested {
-        fun getExampleI(): Int {
+        fun exampleI(): Int {
             return i
         }
     }

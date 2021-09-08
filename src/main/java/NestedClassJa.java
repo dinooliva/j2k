@@ -6,7 +6,7 @@ class NestedClassJa {
     }
 
     class Nested {
-        int getExampleI() {
+        int exampleI() {
             return i;
         }
     }
