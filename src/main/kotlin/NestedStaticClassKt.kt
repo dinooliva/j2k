@@ -1,12 +1,21 @@
 class NestedStaticClassKt {
-    companion object { var i = 0 }
+    companion object {
+        var i = 0
+
+        fun lowerJ(): Int {
+            return Nested.j;
+        }
+    }
 
     class Nested {
-        constructor(j: Int) {
-            i = j
+        companion object { var j = 0 }
+
+        constructor(value: Int) {
+            i = value
+            j = 2 * value
         }
 
-        fun getExampleI(): Int {
+        fun upperI(): Int {
             return i
         }
     }
