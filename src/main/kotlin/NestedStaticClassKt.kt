@@ -8,7 +8,7 @@ class NestedStaticClassKt {
     }
 
     class Nested {
-        companion object { var j = 0 }
+        companion object { internal var j = 0 }
 
         constructor(value: Int) {
             i = value

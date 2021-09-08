@@ -7,6 +7,7 @@ class NestedStaticClassJa {
 
     static class Nested {
         private static int j = 42;
+
         Nested(int value) {
             i = value;
             j = 2 * value;
