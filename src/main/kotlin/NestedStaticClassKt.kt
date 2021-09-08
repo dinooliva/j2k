@@ -1,14 +1,16 @@
 class NestedStaticClassKt {
     companion object {
-        var i = 0
+        @JvmField var i = 0
 
-        fun lowerJ(): Int {
+        @JvmStatic fun lowerJ(): Int {
             return Nested.j;
         }
     }
 
     class Nested {
-        companion object { internal var j = 0 }
+        companion object {
+            @JvmField internal var j = 0
+        }
 
         constructor(value: Int) {
             i = value
