@@ -21,8 +21,7 @@ class PropertiesJa {
     }
 
     int getSynthesized() {
-        if (empty) return 0;
-        return mutable;
+       return empty ? 0 : mutable;
     }
 
     void setSynthesized(int value) {
