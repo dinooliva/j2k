@@ -19,4 +19,15 @@ class PropertiesJa {
     void setEmpty(boolean empty) {
         this.empty = empty;
     }
+
+    int getSynthesized() {
+        if (empty) return 0;
+        return mutable;
+    }
+
+    void setSynthesized(int value) {
+        if (!empty) {
+            this.mutable = value;
+        }
+    }
 }
