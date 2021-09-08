@@ -5,7 +5,8 @@ class PropertiesKt {
     var synthesized
         get() = if (isEmpty) 0 else mutable
         set(value) {
-            mutable = value
+            if (!isEmpty) {
+                mutable = value
+            }
         }
-
 }

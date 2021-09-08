@@ -23,11 +23,13 @@ class PropertiesTest {
         assertTrue(kt.isEmpty)
         assertTrue(ja.isEmpty)
 
+        kt.synthesized = 32
+        ja.synthesized = 32
         assertEquals(0, kt.synthesized)
         assertEquals(0, ja.synthesized)
         kt.isEmpty = false
-        kt.synthesized = 32
         ja.isEmpty = false
+        kt.synthesized = 32
         ja.synthesized = 32
         assertEquals(32, kt.synthesized)
         assertEquals(32, ja.synthesized)
