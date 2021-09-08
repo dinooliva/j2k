@@ -1,4 +1,4 @@
-public class PropertiesJa {
+class PropertiesJa {
     private final int immutable = 42;
     int getImmutable() {
         return immutable;
