@@ -1,33 +1,28 @@
 class ForJa {
-    int loop(int n) {
-        int i = 0;
-        for (int j = 0; j < n; j++) {
-            i++;
+    boolean countTo(int count) {
+        int i;
+        for (i = 0; i < count; i++) {
         }
-        return i;
+        return i == count;
     }
 
-    int loopWithBreak(int n) {
-        int i = 0;
-        int j;
-        out: for (j = 0; j < n; j++) {
-            if (j > n/2) {
-                break out;
-            }
-            i++;
+    boolean countToWithBreak(int count) {
+        int dbl = count * 2;
+        int i;
+        loop: for (i = 0; i < dbl; i++) {
+            if (i == count) break loop;
         }
-        return j == n ? -1 : i;
+        return i == count;
     }
 
-    int loopWithContinue(int n) {
-        int i = 0;
-        int j;
-        out: for (j = 0; j < n; j++) {
-            if (j > n / 2) {
-                continue out;
-            }
-            i++;
+    boolean countToWithContinue(int count) {
+        int dbl = count * 2;
+        int i;
+        int j = 0;
+        loop: for (i = 0; i < dbl; i++) {
+            if (i >= count) continue loop;
+            j++;
         }
-        return j == n ? i : -1;
+        return i == dbl && j == count;
     }
 }

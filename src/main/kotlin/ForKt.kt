@@ -1,38 +1,34 @@
 class ForKt {
-    fun loop(n: Int): Int {
+    fun countTo(count: Int): Boolean {
         var i = 0
-        var j = 0
-        while (j < n) {
+        while (i < count) {
             i++
-            j++
         }
-        return i
+        return i == count
     }
 
-    fun loopWithBreak(n: Int): Int {
+    fun countToWithBreak(count: Int): Boolean {
+        val dbl = count * 2
         var i = 0
-        var j = 0
-        out@ while (j < n) {
-            if (j > n / 2) {
-                break@out
-            }
+        loop@ while (i < dbl) {
+            if (i == count) break@loop
             i++
-            j++
         }
-        return if (j == n) -1 else i
+        return i == count
     }
 
-    fun loopWithContinue(n: Int): Int {
+    fun countToWithContinue(count: Int): Boolean {
+        val dbl = count * 2
         var i = 0
         var j = 0
-        out@ while (j < n) {
-            if (j > n / 2) {
-                j++
-                continue@out
+        loop@ while (i < dbl) {
+            if (i >= count) {
+                i++
+                continue@loop
             }
-            i++
             j++
+            i++
         }
-        return if (j == n) i else -1
+        return i == dbl && j == count
     }
 }

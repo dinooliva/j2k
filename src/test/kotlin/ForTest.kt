@@ -1,5 +1,5 @@
 import kotlin.test.Test
-import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 class ForTest{
     @Test
@@ -7,13 +7,13 @@ class ForTest{
         val ja = ForJa()
         val kt = ForKt()
 
-        assertEquals(4, ja.loop(4))
-        assertEquals(4, kt.loop(4))
+        assertTrue(ja.countTo(10))
+        assertTrue(kt.countTo(10))
 
-        assertEquals(6, ja.loopWithBreak(10))
-        assertEquals(6, kt.loopWithBreak(10))
+        assertTrue( ja.countToWithBreak(20))
+        assertTrue(kt.countToWithBreak(20))
 
-        assertEquals(7, ja.loopWithContinue(12))
-        assertEquals(7, kt.loopWithContinue(12))
+        assertTrue(ja.countToWithContinue(30))
+        assertTrue(kt.countToWithContinue(30))
     }
 }
