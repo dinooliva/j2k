@@ -1,12 +1,16 @@
 class IfKt {
-    fun fromIf(b: Boolean): Int {
+    fun ifTerenary(b: Boolean): Int {
+       return if (b) 1 else 0
+    }
+
+    fun ifThen(b: Boolean): Int {
         if (b) {
             return 1
         }
         return 0
     }
 
-    fun fromIfElse(b: Boolean): Int {
+    fun ifThenElse(b: Boolean): Int {
         if (b) {
             return 1
         } else {

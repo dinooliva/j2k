@@ -7,10 +7,13 @@ class IfTest {
         val ja = IfJa()
         val kt = IfKt()
 
-        assertEquals(0, ja.fromIf(false))
-        assertEquals(0, kt.fromIf(false))
+        assertEquals(1, ja.ifTerenary(true))
+        assertEquals(1, kt.ifTerenary(true))
 
-        assertEquals(1, ja.fromIfElse(true))
-        assertEquals(1, kt.fromIfElse(true))
+        assertEquals(0, ja.ifThen(false))
+        assertEquals(0, kt.ifThen(false))
+
+        assertEquals(1, ja.ifThenElse(true))
+        assertEquals(1, kt.ifThenElse(true))
     }
 }

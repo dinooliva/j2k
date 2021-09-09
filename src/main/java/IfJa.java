@@ -1,12 +1,15 @@
 class IfJa {
-    int fromIf(boolean b) {
+    int ifTerenary(boolean b) {
+        return b ? 1 : 0;
+    }
+    int ifThen(boolean b) {
         if (b) {
             return 1;
         }
         return 0;
     }
 
-    int fromIfElse(boolean b) {
+    int ifThenElse(boolean b) {
         if (b) {
             return 1;
         } else {
