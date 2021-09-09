@@ -1,5 +1,5 @@
 class WhileJa {
-    boolean count(int count) {
+    boolean countTo(int count) {
         int i = 0;
         while (i < count) {
             i++;
@@ -7,7 +7,7 @@ class WhileJa {
         return i == count;
     }
 
-    boolean countWithBreak(int count) {
+    boolean countToWithBreak(int count) {
         int dbl = count * 2;
         int i = 0;
         loop: while (i < dbl) {
@@ -17,7 +17,7 @@ class WhileJa {
         return i == count;
     }
 
-    boolean countWithContinue(int count) {
+    boolean countToWithContinue(int count) {
         int dbl = count * 2;
         int i = 0;
         int j = 0;

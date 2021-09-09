@@ -1,5 +1,5 @@
 class WhileKt {
-    fun count(count: Int): Boolean {
+    fun countTo(count: Int): Boolean {
         var i = 0
         while (i < count) {
             i++
@@ -7,7 +7,7 @@ class WhileKt {
         return i == count
     }
 
-    fun countWithBreak(count: Int): Boolean {
+    fun countToWithBreak(count: Int): Boolean {
         val dbl = count * 2
         var i = 0
         loop@ while (i < dbl) {
@@ -17,7 +17,7 @@ class WhileKt {
         return i == count
     }
 
-    fun countWithContinue(count: Int): Boolean {
+    fun countToWithContinue(count: Int): Boolean {
         val dbl = count * 2
         var i = 0
         var j = 0
