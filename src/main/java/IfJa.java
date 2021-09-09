@@ -1,5 +1,5 @@
 class IfJa {
-    int ifTerenary(boolean b) {
+    int ifTernary(boolean b) {
         return b ? 1 : 0;
     }
     int ifThen(boolean b) {

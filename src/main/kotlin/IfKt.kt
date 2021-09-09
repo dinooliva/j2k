@@ -1,5 +1,5 @@
 class IfKt {
-    fun ifTerenary(b: Boolean): Int {
+    fun ifTernary(b: Boolean): Int {
        return if (b) 1 else 0
     }
 
