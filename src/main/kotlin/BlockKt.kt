@@ -15,10 +15,9 @@ class BlockKt {
             if (true) {
                 if (i == 0) {
                     b = false
-                    continue@foo;
-                } else {
-                    break@foo
+                    continue@foo
                 }
+                break@foo
             }
         }
         return b

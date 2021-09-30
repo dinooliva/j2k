@@ -19,9 +19,8 @@ class BlockJa {
                 if (j == 0) {
                     b = false;
                     continue;
-                } else {
-                    break foo;
                 }
+                break foo;
             }
         }
         return b;
