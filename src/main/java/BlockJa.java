@@ -12,13 +12,12 @@ class BlockJa {
 
     boolean blockWithLabel(int i) {
         boolean b = true;
-        foo:
-        while (b){
+        foo: while (b){
             {
                 int j = i;
                 if (j == 0) {
                     b = false;
-                    continue;
+                    continue foo;
                 }
                 break foo;
             }

@@ -13,7 +13,8 @@ class BlockKt {
         var b = true
         foo@ while (b) {
             if (true) {
-                if (i == 0) {
+                var j = i
+                if (j == 0) {
                     b = false
                     continue@foo
                 }
