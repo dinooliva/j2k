@@ -1,6 +1,6 @@
 class InstanceofKt {
     fun isInstanceof(a: A?): Boolean {
-        return if (a == null) false else a is B
+        return a is B
     }
 
     open class A
